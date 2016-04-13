@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Quito Seguro</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="quito_seguro">Quito Seguro</string>
+    <string name="social_share_text">Help make the city safer</string>
+    <string name="quito_seguro_icon">Quito Seguro icon</string>
+    <string name="about_quito_seguro">About Quito Seguro</string>
+    <string name="reported_offenses">Reported Offenses</string>
+    <string name="report_statistics">Report Statistics</string>
+    <string name="security_tips">Security Tips</string>
+    <string name="all">All</string>
+
+    <!--Offenses-->
+    <string name="off_robbery">Robbery</string>
+    <string name="off_express_kidnapping">Express Kidnapping</string>
+    <string name="off_missing_person">Missing Person</string>
+    <string name="off_murder">Murder</string>
+    <string name="off_house_robbery">House Robbery</string>
+    <string name="off_store_robbery">Store Robbery</string>
+    <string name="off_grand_theft_auto">Grand Theft Auto</string>
+    <string name="off_credit_card_cloning">Credit Card Cloning</string>
+    <string name="off_public_disorder">Public Disorder</string>
+
 </resources>
