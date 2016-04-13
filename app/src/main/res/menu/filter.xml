@@ -10,6 +10,10 @@
         android:title="@string/off_robbery"
         app:showAsAction="never" />
     <item
+        android:id="@+id/action_filter_violence"
+        android:title="@string/off_violence"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/action_filter_express_kidnapping"
         android:title="@string/off_express_kidnapping"
         app:showAsAction="never" />
