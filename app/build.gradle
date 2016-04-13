@@ -17,6 +17,7 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -28,6 +29,11 @@ android {
             signingConfig signingConfigs.config
         }
     }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
 }
 
 dependencies {
@@ -35,4 +41,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:design:23.3.0'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile 'com.firebase:firebase-client-android:2.5.2+'
+    compile 'com.firebaseui:firebase-ui:0.3.1'
 }
