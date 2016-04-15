@@ -77,6 +77,13 @@ public class ReportsMapFragment extends SupportMapFragment implements OnMapReady
         if (reportQuery != null && valueListener != null) {
             reportQuery.removeEventListener(valueListener);
         }
+
+        if (locationManager != null) {
+            if (ContextCompat.checkSelfPermission(getContext(),
+                    Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                locationManager.removeUpdates(this);
+            }
+        }
     }
 
     @Override
@@ -115,24 +122,31 @@ public class ReportsMapFragment extends SupportMapFragment implements OnMapReady
         if (id == R.id.action_filter_express_kidnapping) {
             offenseFilter = "off_express_kidnapping";
         }
+
         if (id == R.id.action_filter_missing_person) {
             offenseFilter = "off_missing_person";
         }
+
         if (id == R.id.action_filter_murder) {
             offenseFilter = "off_murder";
         }
+
         if (id == R.id.action_filter_house_robbery) {
             offenseFilter = "off_house_robbery";
         }
+
         if (id == R.id.action_filter_store_robbery) {
             offenseFilter = "off_store_robbery";
         }
+
         if (id == R.id.action_filter_grand_theft_auto) {
             offenseFilter = "off_grand_theft_auto";
         }
+
         if (id == R.id.action_filter_credit_card_cloning) {
             offenseFilter = "off_credit_card_cloning";
         }
+
         if (id == R.id.action_filter_public_disorder) {
             offenseFilter = "off_public_disorder";
         }

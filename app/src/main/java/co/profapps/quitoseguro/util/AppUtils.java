@@ -69,4 +69,9 @@ public final class AppUtils {
         return (location.getLatitude() < -0.0413704 &&  location.getLatitude() > -0.3610194) &&
                 (location.getLongitude() < -78.4078789 && location.getLongitude() > -78.5881530);
     }
+
+    public static boolean isValidLocation(@NonNull LatLng location) {
+        return (location.latitude < -0.0413704 &&  location.latitude > -0.3610194) &&
+                (location.longitude < -78.4078789 && location.longitude > -78.5881530);
+    }
 }

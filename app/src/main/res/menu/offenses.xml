@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_filter_robbery"
+        android:title="@string/off_robbery"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_filter_violence"
+        android:title="@string/off_violence"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_filter_express_kidnapping"
+        android:title="@string/off_express_kidnapping"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_filter_missing_person"
+        android:title="@string/off_missing_person"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_filter_murder"
+        android:title="@string/off_murder"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_filter_house_robbery"
+        android:title="@string/off_house_robbery"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_filter_store_robbery"
+        android:title="@string/off_store_robbery"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_filter_grand_theft_auto"
+        android:title="@string/off_grand_theft_auto"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_filter_credit_card_cloning"
+        android:title="@string/off_credit_card_cloning"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_filter_public_disorder"
+        android:title="@string/off_public_disorder"
+        app:showAsAction="never" />
+</menu>

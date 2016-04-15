@@ -42,4 +42,5 @@
     <string name="when_did_it_happen">When did it happen?</string>
     <string name="what_happened">What happened?</string>
     <string name="where_did_it_happen">Where did it happen?</string>
+    <string name="report_sent">Thank you for sending your report.</string>
 </resources>
