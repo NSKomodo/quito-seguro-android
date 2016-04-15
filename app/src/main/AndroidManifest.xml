@@ -24,6 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CreateActivity"
+            android:label="@string/title_send_a_report" />
+        <activity
+            android:name=".LegalNoticesActivity"
+            android:label="@string/legal_notices_item" />
 
         <!-- Meta-data -->
         <meta-data

@@ -1,5 +1,6 @@
 package co.profapps.quitoseguro;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -13,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import co.profapps.quitoseguro.firebase.FirebaseHelper;
+import co.profapps.quitoseguro.fragment.AboutFragment;
 import co.profapps.quitoseguro.fragment.ReportsMapFragment;
 import co.profapps.quitoseguro.fragment.StatsListFragment;
 import co.profapps.quitoseguro.util.AppUtils;
@@ -45,11 +47,11 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_reports) {
             loadReportsMapFragment();
         } else if (id == R.id.nav_stats) {
-            loadStatsFragment();
+            loadStatsListFragment();
         } else if (id == R.id.nav_tips) {
-
+            // TODO: load tips fragment
         } else if (id == R.id.nav_about) {
-
+            loadAboutFragment();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -68,8 +70,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startCreateReportActivity();
             }
         });
 
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity
                 ReportsMapFragment.TAG).commit();
     }
 
-    private void loadStatsFragment() {
+    private void loadStatsListFragment() {
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.hide();
 
@@ -114,5 +115,25 @@ public class MainActivity extends AppCompatActivity
 
         getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, fragment,
                 StatsListFragment.TAG).commit();
+    }
+
+    private void loadAboutFragment() {
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.hide();
+
+        AboutFragment fragment = (AboutFragment) getSupportFragmentManager()
+                .findFragmentByTag(AboutFragment.TAG);
+
+        if (fragment == null) {
+            fragment = AboutFragment.newInstance();
+        }
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, fragment,
+                AboutFragment.TAG).commit();
+    }
+
+    private void startCreateReportActivity() {
+        Intent intent = new Intent(this, CreateActivity.class);
+        startActivity(intent);
     }
 }

@@ -26,4 +26,20 @@
     <string name="reported_offenses">Reported Offenses</string>
     <string name="report_statistics">Report Statistics</string>
     <string name="security_tips">Security Tips</string>
+    <string name="developed_by">DEVELOPED BY PROF APPS</string>
+    <string name="about_text">This app is a contribution to Quito\'s citizens and tourists, because we also want a safer city and we believe it is definitely possible.</string>
+    <string name="emergency_contacts">EMERGENCY CONTACTS IN QUITO</string>
+    <string name="legal_notices">LEGAL NOTICES</string>
+    <string name="legal_notices_item">Licenses and Attributions</string>
+    <string name="emergencies_911">Emergencies 911</string>
+    <string name="police_101">Police 101</string>
+    <string name="fire_department_102">Fire Department 102</string>
+    <string name="call_emergency_contact">Call Emergency Contact</string>
+    <string name="call_emergency_contact_text">Are you sure you want to call %1$s?</string>
+    <string name="send">Send</string>
+    <string name="title_send_a_report">Send a Report</string>
+    <string name="map_pin">Map pin</string>
+    <string name="when_did_it_happen">When did it happen?</string>
+    <string name="what_happened">What happened?</string>
+    <string name="where_did_it_happen">Where did it happen?</string>
 </resources>

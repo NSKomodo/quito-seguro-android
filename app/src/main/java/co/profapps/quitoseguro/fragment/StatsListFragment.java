@@ -40,7 +40,7 @@ public class StatsListFragment extends ListFragment {
         getActivity().setTitle(getString(R.string.report_statistics));
 
         getListView().setBackgroundColor(ContextCompat.getColor(getActivity(),
-                R.color.colorPrimaryDark));
+                R.color.colorPrimaryDarkest));
         getListView().setDivider(new ColorDrawable(ContextCompat.getColor(getActivity(),
                 R.color.colorPrimary)));
         getListView().setDividerHeight(2);
