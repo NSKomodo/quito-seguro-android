@@ -5,7 +5,8 @@
         <item
             android:id="@+id/nav_reports"
             android:icon="@drawable/ic_my_location_black"
-            android:title="@string/reported_offenses" />
+            android:title="@string/reported_offenses"
+            android:checked="true" />
         <item
             android:id="@+id/nav_stats"
             android:icon="@drawable/ic_stats_black"

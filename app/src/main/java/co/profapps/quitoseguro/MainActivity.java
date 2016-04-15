@@ -14,6 +14,7 @@ import android.view.View;
 
 import co.profapps.quitoseguro.firebase.FirebaseHelper;
 import co.profapps.quitoseguro.fragment.ReportsMapFragment;
+import co.profapps.quitoseguro.fragment.StatsListFragment;
 import co.profapps.quitoseguro.util.AppUtils;
 
 public class MainActivity extends AppCompatActivity
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_reports) {
             loadReportsMapFragment();
         } else if (id == R.id.nav_stats) {
-
+            loadStatsFragment();
         } else if (id == R.id.nav_tips) {
 
         } else if (id == R.id.nav_about) {
@@ -86,6 +87,9 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void loadReportsMapFragment() {
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.show();
+
         ReportsMapFragment fragment = (ReportsMapFragment) getSupportFragmentManager()
                 .findFragmentByTag(ReportsMapFragment.TAG);
 
@@ -95,5 +99,20 @@ public class MainActivity extends AppCompatActivity
 
         getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, fragment,
                 ReportsMapFragment.TAG).commit();
+    }
+
+    private void loadStatsFragment() {
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.hide();
+
+        StatsListFragment fragment = (StatsListFragment) getSupportFragmentManager()
+                .findFragmentByTag(StatsListFragment.TAG);
+
+        if (fragment == null) {
+            fragment = StatsListFragment.newInstance();
+        }
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, fragment,
+                StatsListFragment.TAG).commit();
     }
 }
