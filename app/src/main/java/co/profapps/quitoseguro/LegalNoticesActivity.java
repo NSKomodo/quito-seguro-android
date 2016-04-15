@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 import com.google.android.gms.common.GoogleApiAvailability;
 
+import co.profapps.quitoseguro.util.AppUtils;
+
 public class LegalNoticesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,8 @@ public class LegalNoticesActivity extends AppCompatActivity {
     }
 
     private void setupUI() {
+        AppUtils.setAppBarColorOnRecentWindows(this);
+
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }

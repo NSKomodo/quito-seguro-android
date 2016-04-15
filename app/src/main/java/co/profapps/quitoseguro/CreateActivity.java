@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import co.profapps.quitoseguro.fragment.CreateReportFragment;
+import co.profapps.quitoseguro.util.AppUtils;
 
 public class CreateActivity extends AppCompatActivity {
 
@@ -16,6 +17,8 @@ public class CreateActivity extends AppCompatActivity {
     }
 
     private void setupUI() {
+        AppUtils.setAppBarColorOnRecentWindows(this);
+
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
