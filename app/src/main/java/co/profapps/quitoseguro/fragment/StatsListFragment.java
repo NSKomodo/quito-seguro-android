@@ -77,8 +77,10 @@ public class StatsListFragment extends ListFragment {
                         numberTextView.setText(String.valueOf(dataSnapshot.getChildrenCount()));
                         total += dataSnapshot.getChildrenCount();
 
-                        getActivity().setTitle(getString(R.string.report_statistics) +
-                                " | Total: " + total);
+                        if (isAdded()) {
+                            getActivity().setTitle(getString(R.string.report_statistics) +
+                                    " | Total: " + total);
+                        }
 
                         statsFetched = position == dataSnapshot.getChildrenCount() - 1;
                     }
