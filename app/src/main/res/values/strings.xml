@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Quito Seguro</string>
-    <string name="title_activity_main">Quito Seguro</string>
+    <string name="title_activity_main" translatable="false">Quito Seguro</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
 
     <!--Offenses-->
     <string name="all">All</string>
@@ -19,7 +19,7 @@
     <string name="off_public_disorder">Public Disorder</string>
 
     <string name="action_settings">Settings</string>
-    <string name="quito_seguro">Quito Seguro</string>
+    <string name="quito_seguro" translatable="false">Quito Seguro</string>
     <string name="social_share_text">Help make the city safer</string>
     <string name="quito_seguro_icon">Quito Seguro icon</string>
     <string name="about_quito_seguro">About Quito Seguro</string>
@@ -37,10 +37,15 @@
     <string name="call_emergency_contact">Call Emergency Contact</string>
     <string name="call_emergency_contact_text">Are you sure you want to call %1$s?</string>
     <string name="send">Send</string>
-    <string name="title_send_a_report">Send a Report</string>
-    <string name="map_pin">Map pin</string>
+    <string name="title_send_a_report">Report an Offense</string>
+    <string name="map_pin" translatable="false">Map pin</string>
     <string name="when_did_it_happen">When did it happen?</string>
     <string name="what_happened">What happened?</string>
     <string name="where_did_it_happen">Where did it happen?</string>
     <string name="report_sent">Thank you for sending your report.</string>
+    <string name="tip_image">Tip image</string>
+    <string name="tip_header_image">Tip header image</string>
+    <string name="share_this_tip">Share this Tip</string>
+    <string name="share_tip_title">How do you want to share this tip?</string>
+    <string name="download_app_at">Download Quito Seguro app on the Play Store at:</string>
 </resources>

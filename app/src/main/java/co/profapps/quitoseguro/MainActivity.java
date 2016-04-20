@@ -17,6 +17,7 @@ import co.profapps.quitoseguro.firebase.FirebaseHelper;
 import co.profapps.quitoseguro.fragment.AboutFragment;
 import co.profapps.quitoseguro.fragment.ReportsMapFragment;
 import co.profapps.quitoseguro.fragment.StatsListFragment;
+import co.profapps.quitoseguro.fragment.TipsListFragment;
 import co.profapps.quitoseguro.util.AppUtils;
 
 public class MainActivity extends AppCompatActivity
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_stats) {
             loadStatsListFragment();
         } else if (id == R.id.nav_tips) {
-            // TODO: load tips fragment
+            loadTipsListFragment();
         } else if (id == R.id.nav_about) {
             loadAboutFragment();
         }
@@ -130,6 +131,21 @@ public class MainActivity extends AppCompatActivity
 
         getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, fragment,
                 AboutFragment.TAG).commit();
+    }
+
+    private void loadTipsListFragment() {
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.hide();
+
+        TipsListFragment fragment = (TipsListFragment) getSupportFragmentManager()
+                .findFragmentByTag(TipsListFragment.TAG);
+
+        if (fragment == null) {
+            fragment = TipsListFragment.newInstance();
+        }
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, fragment,
+                TipsListFragment.TAG).commit();
     }
 
     private void startCreateReportActivity() {

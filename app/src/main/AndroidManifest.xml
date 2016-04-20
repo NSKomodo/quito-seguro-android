@@ -17,7 +17,8 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,10 +27,14 @@
         </activity>
         <activity
             android:name=".CreateActivity"
-            android:label="@string/title_send_a_report" />
+            android:label="@string/title_send_a_report"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TipDetailActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LegalNoticesActivity"
-            android:label="@string/legal_notices_item" />
+            android:label="@string/legal_notices_item"
+            android:screenOrientation="portrait" />
 
         <!-- Meta-data -->
         <meta-data

@@ -2,8 +2,9 @@
 <resources>
     <color name="colorPrimary">#443F46</color>
     <color name="colorPrimaryDark">#332F38</color>
-    <color name="colorPrimaryDarkest">#11101D</color>
+    <color name="colorPrimaryDarkest">#11101d</color>
     <color name="colorAccent">#F44336</color>
+    <color name="colorGreen">#4CAF50</color>
     <color name="colorListItemBackground">#1D1C29</color>
     <color name="colorLightGray">#FF434343</color>
     <color name="colorLightGrayText">#44FFFFFF</color>

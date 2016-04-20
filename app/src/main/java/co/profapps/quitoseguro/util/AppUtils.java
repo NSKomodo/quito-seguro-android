@@ -22,6 +22,8 @@ import co.profapps.quitoseguro.R;
 
 public final class AppUtils {
     public static final LatLng QUITO_LAT_LNG = new LatLng(-0.2166667, -78.5166667);
+    public static final String PLAY_STORE_URL =
+            "https://play.google.com/store/apps/details?id=co.profapps.quitoseguro";
 
     private AppUtils() {}
 
@@ -46,7 +48,7 @@ public final class AppUtils {
 
             ActivityManager.TaskDescription taskDescription = null;
             taskDescription = new ActivityManager
-                    .TaskDescription(activity.getTitle().toString(), bitmap, Color.LTGRAY);
+                    .TaskDescription(activity.getTitle().toString(), bitmap, Color.rgb(17, 16, 29));
 
             activity.setTaskDescription(taskDescription);
         }

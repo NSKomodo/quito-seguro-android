@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quito Seguro</string>
+    <string name="about_quito_seguro">Acerca de Quito Seguro</string>
+    <string name="about_text">Para Quito, porque también queremos una ciudad más segura y creemos que sí es posible.</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="all">Todos</string>
+    <string name="call_emergency_contact">Llamar a Contacto de Emergencia</string>
+    <string name="call_emergency_contact_text">Estás seguro que deseas llamar al %1$s?</string>
+    <string name="developed_by">DESAROLLADO POR PROF APPS</string>
+    <string name="download_app_at">Descarga la app en Play Store en:</string>
+    <string name="emergencies_911">Emergencias 911</string>
+    <string name="emergency_contacts">EMERGENCIAS EN QUITO</string>
+    <string name="fire_department_102">Bomberos 102</string>
+    <string name="legal_notices">AVISO LEGAL</string>
+    <string name="legal_notices_item">Licencias y Atribuciones</string>
+    <string name="off_credit_card_cloning">Clonación de Tarjetas</string>
+    <string name="off_express_kidnapping">Secuestro Express</string>
+    <string name="off_grand_theft_auto">Robo a Vehículo</string>
+    <string name="off_house_robbery">Robo a Domicilio</string>
+    <string name="off_missing_person">Persona Desaparecida</string>
+    <string name="off_murder">Asesinato</string>
+    <string name="off_public_disorder">Alteración Orden Público</string>
+    <string name="off_robbery">Asalto</string>
+    <string name="off_store_robbery">Robo a Local Comercial</string>
+    <string name="off_violence">Violencia</string>
+    <string name="police_101">Policía 101</string>
+    <string name="quito_seguro_icon">Ícono Quito Seguro</string>
+    <string name="report_sent">Gracias por enviar tu reporte.</string>
+    <string name="report_statistics">Estadísticas de Reportes</string>
+    <string name="reported_offenses">Delitos Reportados</string>
+    <string name="security_tips">Tips de Seguridad</string>
+    <string name="send">Enviar</string>
+    <string name="share_this_tip">Compartir este Tip</string>
+    <string name="share_tip_title">¿Cómo quieres compartir este tip?</string>
+    <string name="social_share_text">Una ciudad más segura</string>
+    <string name="tip_header_image">Imagen de tip</string>
+    <string name="tip_image">Imagen de tip</string>
+    <string name="title_send_a_report">Reportar un Delito</string>
+    <string name="what_happened">¿Qué ocurrió?</string>
+    <string name="when_did_it_happen">¿Cuando ocurrió?</string>
+    <string name="where_did_it_happen">¿Dónde ocurrió?</string>
+</resources>
