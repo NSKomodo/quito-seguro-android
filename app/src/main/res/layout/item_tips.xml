@@ -38,6 +38,7 @@
             tools:text="Small Text"
             android:id="@+id/summaryTextView"
             android:textColor="@android:color/white"
-            android:layout_marginTop="8dp" />
+            android:ellipsize="end"
+            android:textSize="14sp" />
     </LinearLayout>
 </LinearLayout>
