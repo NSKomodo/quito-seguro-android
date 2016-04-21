@@ -2,7 +2,7 @@ package co.profapps.quitoseguro.model;
 
 public class Report {
     private String offense;
-    private String date;
+    private long date;
     private double lat;
     private double lng;
     private String platform;
@@ -15,11 +15,11 @@ public class Report {
         this.offense = offense;
     }
 
-    public String getDate() {
+    public long getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(long date) {
         this.date = date;
     }
 

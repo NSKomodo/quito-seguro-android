@@ -37,8 +37,9 @@ public final class AppUtils {
                 .show();
     }
 
-    public static String getFormattedDate(@NonNull Date date) {
-        return new SimpleDateFormat("EEEE MMMM d, yyyy", Locale.getDefault()).format(date);
+    public static String getFormattedDate(long milliseconds) {
+        return new SimpleDateFormat("EEEE MMMM d, yyyy", Locale.getDefault())
+                .format(new Date(milliseconds));
     }
 
     public static void setAppBarColorOnRecentWindows(@NonNull Activity activity) {

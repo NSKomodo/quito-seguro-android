@@ -6,7 +6,6 @@ import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.location.Location;
 import android.location.LocationListener;
@@ -27,7 +26,6 @@ import android.widget.DatePicker;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-import com.firebase.client.Firebase;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -297,11 +295,11 @@ public class CreateReportFragment extends Fragment implements OnMapReadyCallback
                         Calendar gregorianCalendar =
                                 new GregorianCalendar(year, month, dayOfMonth);
 
-                        report.setDate(AppUtils.getFormattedDate(gregorianCalendar.getTime()));
+                        report.setDate(gregorianCalendar.getTime().getTime());
 
                         if (getView() != null) {
                             TextView dateTextView = (TextView) getView().findViewById(R.id.dateTextView);
-                            dateTextView.setText(report.getDate());
+                            dateTextView.setText(AppUtils.getFormattedDate(report.getDate()));
                         }
 
                         validate();
@@ -312,7 +310,7 @@ public class CreateReportFragment extends Fragment implements OnMapReadyCallback
     }
 
     private void validate() {
-        boolean isValid = report.getOffense() != null && report.getDate() != null &&
+        boolean isValid = report.getOffense() != null && report.getDate() != 0 &&
                 AppUtils.isValidLocation(selectedLatLng);
 
         if (isValid) {

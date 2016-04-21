@@ -207,7 +207,7 @@ public class ReportsMapFragment extends SupportMapFragment implements OnMapReady
                     MarkerOptions options = new MarkerOptions()
                             .position(new LatLng(report.getLat(), report.getLng()))
                             .title(getString(offenseId))
-                            .snippet(report.getDate())
+                            .snippet(AppUtils.getFormattedDate(report.getDate()))
                             .icon(BitmapDescriptorFactory
                                     .fromResource(R.drawable.pin_2));
 
