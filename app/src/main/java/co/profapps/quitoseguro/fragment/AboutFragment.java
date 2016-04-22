@@ -51,12 +51,17 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
 
     private void setupUI(@NonNull View view) {
         getActivity().setTitle(getString(R.string.about_quito_seguro));
+        view.findViewById(R.id.emergencyCallLayout).setOnClickListener(this);
         view.findViewById(R.id.legalNoticesLayout).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         int id = v.getId();
+
+        if (id == R.id.emergencyCallLayout) {
+            // TODO: call 911
+        }
 
         if (id == R.id.legalNoticesLayout) {
             Intent intent = new Intent(getContext(), LegalNoticesActivity.class);
