@@ -31,6 +31,8 @@ import co.profapps.quitoseguro.model.Tip;
 public class TipsListFragment extends ListFragment {
     public static final String TAG = TipsListFragment.class.getSimpleName();
 
+    Query query;
+    ValueEventListener valueEventListener;
     List<Tip> data = new ArrayList<>();
 
     public static TipsListFragment newInstance() {
@@ -58,6 +60,15 @@ public class TipsListFragment extends ListFragment {
     }
 
     @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        if (query != null && valueEventListener !=null) {
+            query.removeEventListener(valueEventListener);
+        }
+    }
+
+    @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         Tip tip = (Tip) l.getItemAtPosition(position);
 
@@ -68,8 +79,8 @@ public class TipsListFragment extends ListFragment {
     }
 
     private void reloadData() {
-        final Query query = FirebaseHelper.getTipsDataRef();
-        final ValueEventListener valueEventListener = new ValueEventListener() {
+        query = FirebaseHelper.getTipsDataRef();
+        valueEventListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.getChildrenCount() > 0) {
@@ -109,8 +120,6 @@ public class TipsListFragment extends ListFragment {
                             return convertView;
                         }
                     });
-
-                    query.removeEventListener(this);
                 }
             }
 

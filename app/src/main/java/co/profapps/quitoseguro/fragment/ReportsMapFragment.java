@@ -209,7 +209,7 @@ public class ReportsMapFragment extends SupportMapFragment implements OnMapReady
                             .title(getString(offenseId))
                             .snippet(AppUtils.getFormattedDate(report.getDate()))
                             .icon(BitmapDescriptorFactory
-                                    .fromResource(R.drawable.pin_2));
+                                    .fromResource(R.drawable.pin_quito_seguro));
 
                     googleMap.addMarker(options);
                 }
