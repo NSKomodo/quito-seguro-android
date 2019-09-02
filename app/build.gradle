@@ -4,9 +4,9 @@ android {
     signingConfigs {
         config {
             keyAlias 'profapps'
-            keyPassword 'lordd3imos'
+            keyPassword ''
             storeFile file('/Users/Shared/Android_Keystore/profapps.jks')
-            storePassword 'lordd3imos'
+            storePassword ''
         }
     }
     compileSdkVersion 23
